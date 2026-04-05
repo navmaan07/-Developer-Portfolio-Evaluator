@@ -9,6 +9,7 @@
 - GET /api/health - Health check
 - GET /api/github/user/:username - Get user profile
 - GET /api/github/repos/:username - Get user repos
+- GET /api/github/activity/:username - Get activity score, commit count, and streak details for the last 90 days
 - POST /api/reports - Create a report
 - GET /api/reports - Get all reports
 

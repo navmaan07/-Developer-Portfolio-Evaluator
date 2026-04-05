@@ -20,4 +20,14 @@ const getUserRepos = async (req, res) => {
   }
 };
 
-export default { getUserProfile, getUserRepos };
+const getUserActivity = async (req, res) => {
+  try {
+    const { username } = req.params;
+    const activity = await githubService.getUserActivity(username);
+    res.json(activity);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export default { getUserProfile, getUserRepos, getUserActivity };
