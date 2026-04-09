@@ -1,0 +1,12 @@
+{
+  "name": "day8",
+  "version": "1.0.0",
+  "description": "Day 8 hiring readiness and final score service",
+  "type": "module",
+  "scripts": {
+    "start": "node server/app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
