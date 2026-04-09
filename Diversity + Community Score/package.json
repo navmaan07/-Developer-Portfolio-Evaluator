@@ -1,0 +1,17 @@
+{
+  "name": "day7",
+  "version": "1.0.0",
+  "description": "Project progressing...",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
