@@ -1,0 +1,203 @@
+.report {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background: #764ba2;
+}
+
+.error {
+  color: #e74c3c;
+  background: #fadbd8;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.profile-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.profile-info p {
+  color: #666;
+  margin: 0.3rem 0;
+}
+
+.profile-info .bio {
+  font-style: italic;
+  color: #764ba2;
+  margin: 0.5rem 0;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.stats span {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.scores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.score-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 2px solid #e0e0e0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.score-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+}
+
+.score-card.overall {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.score-card h3 {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.score-card.overall h3 {
+  color: white;
+}
+
+.score-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #667eea;
+  margin: 0.5rem 0;
+}
+
+.score-card.overall .score-value {
+  color: white;
+}
+
+.score-value.overall-value {
+  font-size: 3.5rem;
+}
+
+.score-card p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.3rem 0;
+}
+
+.score-card.overall p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.metrics {
+  margin-top: 3rem;
+}
+
+.metrics h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.metric {
+  background: #f8f9ff;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.metric label {
+  display: block;
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.metric span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .scores-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}

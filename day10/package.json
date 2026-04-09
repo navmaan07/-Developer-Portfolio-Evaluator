@@ -1,0 +1,21 @@
+{
+  "name": "day10-portfolio-evaluator",
+  "version": "1.0.0",
+  "description": "Developer Portfolio Evaluator - Complete MERN application",
+  "type": "module",
+  "scripts": {
+    "server": "node server/app.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
