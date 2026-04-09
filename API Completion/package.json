@@ -1,0 +1,14 @@
+{
+  "name": "day9",
+  "version": "1.0.0",
+  "description": "Day 9 - Complete profile API with full scoring and GitHub integration",
+  "type": "module",
+  "scripts": {
+    "start": "node server/app.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.0.2",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1"
+  }
+}
