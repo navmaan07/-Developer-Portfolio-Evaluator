@@ -1,0 +1,168 @@
+.compare {
+  min-height: 100vh;
+  padding: 100px 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.compare-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.compare-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.compare-header p {
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.compare-form {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.compare-input-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.vs-divider {
+  font-family: 'Outfit';
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.comparison-results {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.users-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.compare-user-card {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.compare-user-card .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid var(--bg-dark);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.compare-user-card h3 {
+  font-size: 1.5rem;
+}
+
+.compare-overall-badge {
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.comparison-chart-section {
+  padding: 3rem;
+  height: 500px;
+}
+
+.comparison-table-section {
+  padding: 3rem;
+  overflow-x: auto;
+}
+
+.comparison-table-section h3 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.compare-table th, 
+.compare-table td {
+  padding: 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.compare-table th {
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.compare-table td {
+  font-weight: 500;
+}
+
+.metric-name {
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.diff-tag {
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.diff-positive {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.diff-negative {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+}
+
+@media (max-width: 768px) {
+  .compare-input-group {
+    flex-direction: column;
+  }
+  
+  .vs-divider {
+    padding: 0.5rem;
+  }
+  
+  .users-comparison {
+    grid-template-columns: 1fr;
+  }
+}

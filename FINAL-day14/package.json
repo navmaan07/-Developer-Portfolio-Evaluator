@@ -1,0 +1,40 @@
+{
+  "name": "developer-portfolio-evaluator",
+  "version": "1.0.0",
+  "description": "A comprehensive MERN stack application that analyzes GitHub profiles and generates detailed portfolio scores",
+  "main": "index.js",
+  "workspaces": [
+    "client",
+    "server",
+    "front"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev": "concurrently \"npm run dev --workspace=client\" \"npm run dev --workspace=server\"",
+    "dev:all": "concurrently \"npm run dev --workspace=client\" \"npm run dev --workspace=server\" \"npm run dev --workspace=front\"",
+    "build": "npm run build --workspace=client",
+    "start": "npm start --workspace=server",
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "install:client": "npm install --workspace=client",
+    "install:server": "npm install --workspace=server"
+  },
+  "keywords": [
+    "github",
+    "portfolio",
+    "evaluator",
+    "mern",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "Developer Portfolio Evaluator Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

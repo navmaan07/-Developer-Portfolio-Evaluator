@@ -1,0 +1,33 @@
+{
+  "name": "developer-portfolio-evaluator",
+  "version": "1.0.0",
+  "description": "A full-stack MERN application that analyzes GitHub profiles and generates detailed portfolio scores",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "portfolio",
+    "evaluator",
+    "mern",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "Developer Portfolio Evaluator Team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1",
+    "mongoose": "^8.0.0",
+    "octokit": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
